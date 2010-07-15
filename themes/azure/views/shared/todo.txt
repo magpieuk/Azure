@@ -1,0 +1,3 @@
+Change $pageTitle in head.html.erb
+Add conditional code for selected nav class to primary AND secondary nav tempaltes.
+Change footer links & images (badges)
