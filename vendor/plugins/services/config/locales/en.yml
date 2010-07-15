@@ -1,0 +1,16 @@
+en:
+  admin:
+    services:
+      index:
+        create_new: Create a new Service
+        reorder: Reorder Services
+        reorder_done: Done Reordering Services
+        sorry_no_results: Sorry! There are no results found.
+        no_items_yet: There are no services yet. Click "Create a new Service" to add your first service.
+      singular_name:
+        view_live: View this service live <br/><em>(opens in a new window)</em>
+        edit: Edit this service
+        delete: Remove this service forever
+  services:
+    show:
+      other: Other Services

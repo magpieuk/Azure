@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100715161044) do
+ActiveRecord::Schema.define(:version => 20100715164700) do
 
   create_table "images", :force => true do |t|
     t.integer  "parent_id"
@@ -127,6 +127,19 @@ ActiveRecord::Schema.define(:version => 20100715161044) do
     t.integer "user_id"
     t.integer "role_id"
   end
+
+  create_table "services", :force => true do |t|
+    t.string   "title"
+    t.text     "content"
+    t.integer  "contact_id"
+    t.integer  "location_id"
+    t.integer  "category_id"
+    t.integer  "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "services", ["id"], :name => "index_services_on_id"
 
   create_table "slugs", :force => true do |t|
     t.string   "name"
