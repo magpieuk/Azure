@@ -14,7 +14,7 @@ gem 'sqlite3-ruby', :require => 'sqlite3' #db_adapter=sqlite3
 # gem 'capistrano'
 
 # If you are using Amazon S3 you probably want this gem:
-gem 'sauberia-aws-s3', :git => 'git://github.com/sauberia/aws-s3.git'
+gem 'aws-s3'
 
 #===REFINERY REQUIRED GEMS===
 gem 'acts_as_indexed', '= 0.6.3', :require => 'acts_as_indexed'
