@@ -74,6 +74,10 @@ dependencies:
     version: ">= 0"
     require: 
     - json/pure
+  aws-s3: 
+    group: 
+    - :default
+    version: ">= 0"
   launchy: 
     group: 
     - :test
@@ -103,10 +107,14 @@ specs:
     version: 2.1.5
 - builder: 
     version: 2.1.2
-- culerity: 
-    version: 0.2.10
 - mime-types: 
     version: "1.16"
+- xml-simple: 
+    version: 1.0.12
+- aws-s3: 
+    version: 0.6.2
+- culerity: 
+    version: 0.2.10
 - nokogiri: 
     version: 1.4.2
 - rack-test: 
@@ -127,11 +135,11 @@ specs:
 - trollop: 
     version: 1.16.2
 - gherkin: 
-    version: 2.0.2
+    version: 2.1.4
 - term-ansicolor: 
     version: 1.0.5
 - cucumber: 
-    version: 0.8.3
+    version: 0.8.5
 - cucumber-rails: 
     version: 0.3.2
 - database_cleaner: 
@@ -162,13 +170,13 @@ specs:
     version: 0.3.2
 - will_paginate: 
     version: 2.3.14
-hash: f0e84b9713ec7416f7e587d3694ce3fbf0b8f537
+hash: 43a06a7df31ef2ffa947882956a8b54d971305f9
 sources: 
 - Git: 
     uri: git://github.com/parndt/json.git
     branch: master
-    git: git://github.com/parndt/json.git
     require: json/pure
+    git: git://github.com/parndt/json.git
     ref: 34ad345d48764f3acf87a032b3efb4b1908b7213
 - Rubygems: 
     uri: http://gemcutter.org
