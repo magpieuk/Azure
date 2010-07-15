@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100715153053) do
+ActiveRecord::Schema.define(:version => 20100715161044) do
 
   create_table "images", :force => true do |t|
     t.integer  "parent_id"
@@ -161,5 +161,20 @@ ActiveRecord::Schema.define(:version => 20100715153053) do
   end
 
   add_index "users", ["id"], :name => "index_users_on_id"
+
+  create_table "vacancies", :force => true do |t|
+    t.string   "job_title"
+    t.string   "reference"
+    t.string   "starting_salary"
+    t.string   "past_probation"
+    t.date     "start_date"
+    t.date     "closing_date"
+    t.text     "description"
+    t.integer  "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "vacancies", ["id"], :name => "index_vacancies_on_id"
 
 end

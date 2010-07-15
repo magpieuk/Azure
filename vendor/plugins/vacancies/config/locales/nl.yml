@@ -1,0 +1,16 @@
+nl:
+  admin:
+    vacancies:
+      index:
+        create_new: Maak een nieuwe Vacancy
+        reorder: Wijzig de volgorde van de Vacancies
+        reorder_done: Klaar met het wijzingen van de volgorde van de Vacancies
+        sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+        no_items_yet: Er zijn nog geen vacancies. Druk op 'Maak een nieuwe Vacancy' om de eerste aan te maken.
+      singular_name:
+        view_live: Bekijk deze vacancy op de website <br/><em>(opent een nieuw venster)</em>
+        edit: Bewerk deze vacancy
+        delete: Verwijder deze vacancy voor eeuwig
+  vacancies:
+    show:
+      other: Andere Vacancies

@@ -1,0 +1,40 @@
+<% form_for [:admin, @vacancy] do |f| -%>
+  <%= f.error_messages %>
+  
+  <div class='field'>
+    <%= f.label :job_title -%>
+    <%= f.text_field :job_title, :class => 'larger' -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :reference -%>
+    <%= f.text_field :reference -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :starting_salary -%>
+    <%= f.text_field :starting_salary -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :past_probation -%>
+    <%= f.text_field :past_probation -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :start_date -%>
+    <%= f.date_select :start_date -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :closing_date -%>
+    <%= f.date_select :closing_date -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :description -%>
+    <%= f.text_area :description, :rows => 20, :class => 'wymeditor widest' -%>
+  </div>
+  
+  <%= render :partial => "/shared/admin/form_actions", :locals => {:f => f, :continue_editing => false} %>
+<% end -%>
