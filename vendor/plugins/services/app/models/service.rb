@@ -10,6 +10,4 @@ class Service < ActiveRecord::Base
   validates_uniqueness_of :title
 
 
-
-
 end

@@ -1,6 +1,7 @@
 class InquiriesController < ApplicationController
 
   before_filter :find_page, :only => [:create, :new]
+  before_filter :load_lookups, :only => [:new]
 
   def index
     redirect_to :action => "new"
@@ -42,6 +43,11 @@ protected
 
   def find_page
     @page = Page.find_by_link_url('/contact', :include => [:parts, :slugs])
+  end
+
+  def load_lookups
+    @categories= Category.find(:all, :order => "name asc")
+    @locations = Location.find(:all, :order => "name asc")
   end
 
 end

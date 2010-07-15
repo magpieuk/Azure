@@ -1,18 +1,20 @@
 Hi there,
 
-You just received a new inquiry on your website.
+You just received a new enquiry on your website.
 
---- inquiry starts ---
+--- enquiry starts ---
 
 From: <%= @inquiry.name %>
 Email: <%= @inquiry.email %>
 Phone: <%= @inquiry.phone %>
+Address:
+<%= @inquiry.address %>
 Message:
 <%= @inquiry.message %>
 
---- inquiry ends ---
+--- enquiry ends ---
 
 Kind Regards,
 Your Website.
 
-P.S. All your inquiries are stored in the "Inquiries" section of Refinery should you ever want to view it later there.
+P.S. All your inquiries are stored in the "Enquiries" section of Refinery should you ever want to view it later there.

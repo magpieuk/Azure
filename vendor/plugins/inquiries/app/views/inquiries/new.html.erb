@@ -4,6 +4,7 @@
 
     <% form_for @inquiry do |f| %>
       <%= f.error_messages :header_message => t('.header_message'), :message => t('.message') %>
+      <p>I am interested in <%=f.collection_select :category_id, @categories, :id, :name, {:prompt => "General Enquiry"}%> in <%=f.collection_select :location_id, @locations, :id, :name, {:prompt => "Any Location"}%> </p>
       <div class='field'>
         <%= f.required_label :name %>
         <%= f.text_field :name %>
@@ -15,6 +16,10 @@
       <div class='field'>
         <%= f.label :phone %>
         <%= f.text_field :phone %>
+      </div>
+      <div class='field address_field'>
+        <%= f.label :address  %>
+        <%= f.text_area :address, :rows => 8 %>
       </div>
       <div class='field message_field'>
         <%= f.required_label :message  %>
