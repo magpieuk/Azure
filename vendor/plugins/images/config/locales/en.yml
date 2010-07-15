@@ -5,7 +5,21 @@ en:
   no_file_chosen: You must choose a file to upload
   file_should_be_smaller_than_max_image_size: Files should be smaller than {{max_image_size}} in size
   file_must_be_these_formats: Your image must be either a JPG, PNG or GIF
+  albums:
+    show:
+      other: Other Albums
   admin:
+    albums:
+      index:
+        create_new: Create a new Album
+        reorder: Reorder Albums
+        reorder_done: Done Reordering Albums
+        sorry_no_results: Sorry! There are no results found.
+        no_items_yet: There are no albums yet. Click "Create a new Album" to add your first album.
+      album:
+        view_live: View this album live <br/><em>(opens in a new window)</em>
+        edit: Edit this album
+        delete: Remove this album forever
     images:
       form:
         image: Image

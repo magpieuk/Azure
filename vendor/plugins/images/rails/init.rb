@@ -4,7 +4,7 @@ Refinery::Plugin.register do |plugin|
   plugin.directory = "images"
   plugin.description = "Manage images"
   plugin.version = 1.0
-  plugin.menu_match = /(refinery|admin)\/image(_dialog)?s$/
+  plugin.menu_match = /(refinery|admin)\/(image(_dialog)?s|albums)$/
   plugin.activity = {
     :class => Image,
     :title => 'title',

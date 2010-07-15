@@ -49,7 +49,7 @@ class Admin::ImagesController < Admin::BaseController
 
   def create
     @image = Image.create(params[:image])
-
+    
     unless params[:insert]
       if @image.valid?
         flash[:notice] = t('refinery.crudify.created', :what => "'#{@image.title}'")

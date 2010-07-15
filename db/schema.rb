@@ -9,7 +9,27 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100715184425) do
+ActiveRecord::Schema.define(:version => 20100715213131) do
+
+  create_table "albums", :force => true do |t|
+    t.string   "name"
+    t.integer  "cover_image_id"
+    t.boolean  "show_in_gallery"
+    t.integer  "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "albums", ["id"], :name => "index_albums_on_id"
+
+  create_table "categories", :force => true do |t|
+    t.string   "name"
+    t.integer  "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "categories", ["id"], :name => "index_categories_on_id"
 
   create_table "images", :force => true do |t|
     t.integer  "parent_id"
@@ -22,6 +42,8 @@ ActiveRecord::Schema.define(:version => 20100715184425) do
     t.string   "image_type"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "caption"
+    t.integer  "album_id"
   end
 
   add_index "images", ["parent_id"], :name => "index_images_on_parent_id"
@@ -45,6 +67,15 @@ ActiveRecord::Schema.define(:version => 20100715184425) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "locations", :force => true do |t|
+    t.string   "name"
+    t.integer  "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "locations", ["id"], :name => "index_locations_on_id"
 
   create_table "news_items", :force => true do |t|
     t.string   "title"

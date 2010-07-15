@@ -3,6 +3,8 @@ class Image < ActiveRecord::Base
   # What is the max image size a user can upload
   MAX_SIZE_IN_MB = 20
 
+  belongs_to :album
+  
   # Docs for attachment_fu http://github.com/technoweenie/attachment_fu
   has_attachment :content_type => :image,
                  :storage => (Refinery.s3_backend ? :s3 : :file_system),
@@ -63,7 +65,7 @@ class Image < ActiveRecord::Base
   # Returns a titleized version of the filename
   # my_file.jpg returns My File
   def title
-    CGI::unescape(self.filename).gsub(/\.\w+$/, '').titleize
+    self.caption.present? ? self.caption : CGI::unescape(self.filename).gsub(/\.\w+$/, '').titleize
   end
 
   # Rebuild thumbnails, for rake tasks
