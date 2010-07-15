@@ -150,7 +150,6 @@ ActiveRecord::Schema.define(:version => 20100715165313) do
     t.datetime "created_at"
   end
 
-  add_index "slugs", ["name", "sluggable_type", "scope", "sequence"], :name => "index_slugs_on_name_and_sluggable_type_and_scope_and_sequence", :unique => true
   add_index "slugs", ["sluggable_id"], :name => "index_slugs_on_sluggable_id"
 
   create_table "staffs", :force => true do |t|
@@ -167,6 +166,20 @@ ActiveRecord::Schema.define(:version => 20100715165313) do
   end
 
   add_index "staffs", ["id"], :name => "index_staffs_on_id"
+
+  create_table "testimonials", :force => true do |t|
+    t.text     "quote"
+    t.string   "name"
+    t.string   "company"
+    t.string   "job_title"
+    t.string   "website"
+    t.date     "quoted_on"
+    t.integer  "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "testimonials", ["id"], :name => "index_testimonials_on_id"
 
   create_table "user_plugins", :force => true do |t|
     t.integer "user_id"
