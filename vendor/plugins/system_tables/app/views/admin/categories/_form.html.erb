@@ -1,0 +1,10 @@
+<% form_for [:admin, @category] do |f| -%>
+  <%= f.error_messages %>
+  
+  <div class='field'>
+    <%= f.label :name -%>
+    <%= f.text_field :name, :class => 'larger' -%>
+  </div>
+  
+  <%= render :partial => "/shared/admin/form_actions", :locals => {:f => f, :continue_editing => false} %>
+<% end -%>
