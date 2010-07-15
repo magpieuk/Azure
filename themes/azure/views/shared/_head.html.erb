@@ -4,7 +4,7 @@
 		<title><%= browser_title(yield(:title)) %></title>
 		<%= render :partial => 'shared/google_analytics' unless local_request? %>
 		<%= stylesheet_link_tag "style", :theme => true %>
-  		<script type="text/javascript" src="javascripts/jquery-1.3.1.min.js"></script> 
+  		<script type="text/javascript" src="/theme/javascripts/jquery-1.3.1.min.js"></script> 
   		<link rel="shortcut icon" href="/favicon.ico" />
   		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   		<%= "<meta name=\"keywords\" content=\"#{@meta.meta_keywords}\" />" if @meta.meta_keywords.present? %>
