@@ -1,0 +1,45 @@
+<% form_for [:admin, @staff] do |f| -%>
+  <%= f.error_messages %>
+  
+  <div class='field'>
+    <%= f.label :name -%>
+    <%= f.text_field :name, :class => 'larger' -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :job_title -%>
+    <%= f.text_field :job_title -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :location_id -%>
+    <%= f.text_field :location_id -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :photo -%>
+    <%= render :partial => "/shared/admin/image_picker", :locals => {
+      :f => f,
+      :field => :photo_id,
+      :image => @staff.photo,
+      :toggle_image_display => false
+    } %>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :email -%>
+    <%= f.text_field :email -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :telephone -%>
+    <%= f.text_field :telephone -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :description -%>
+    <%= f.text_area :description, :rows => 20, :class => 'wymeditor widest' -%>
+  </div>
+  
+  <%= render :partial => "/shared/admin/form_actions", :locals => {:f => f, :continue_editing => false} %>
+<% end -%>

@@ -2,3 +2,5 @@ en:
   plugins:
     refinery_inquiries:
       title: Enquiries
+    staffs:
+      title: Staff
