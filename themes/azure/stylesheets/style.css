@@ -1,63 +1,93 @@
-/* RESET CSS - Don't change*/
-	html, body, div, span, applet, object, iframe,
-	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-	a, abbr, acronym, address, big, cite, code,
-	del, dfn, em, font, img, ins, kbd, q, s, samp,
-	small, strike, strong, sub, sup, tt, var,
-	b, u, i, center,
-	dl, dt, dd, ol, ul, li,
-	fieldset, form, label, legend,
-	table, caption, tbody, tfoot, thead, tr, th, td {
-		margin: 0;
-		padding: 0;
-		border: 0;
-		outline: 0;
-		font-size: 100%;
-		vertical-align: baseline;
-		background: transparent;
+/* RESET CSS - Please don't change*/
+	html,body,div,span,applet,object,iframe,
+	h1,h2,h3,h4,h5,h6,p,blockquote,pre,
+	a,abbr,acronym,address,big,cite,code,
+	del,dfn,em,font,img,ins,kbd,q,s,samp,
+	small,strike,strong,sub,sup,tt,var,
+	b,u,i,center,
+	dl,dt,dd,ol,ul,li,
+	fieldset,form,label,legend,
+	table,caption,tbody,tfoot,thead,tr,th,td{
+		margin:0;
+		padding:0;
+		border:0;
+		outline:0;
+		font-size:100%;
+		vertical-align:baseline;
+		background:transparent;
 	}
-	body {
-		line-height: 1;
+	body{
+		line-height:1;
+		background: url('images/bg.jpg');
 	}
-	ol, ul {
-		list-style: none;
+	ol,ul{
+		list-style:none;
 	}
-	blockquote, q {
-		quotes: none;
+	blockquote,q{
+		quotes:none;
 	}
-	blockquote:before, blockquote:after,
-	q:before, q:after {
-		content: '';
-		content: none;
-	}
-	
-	/* remember to define focus styles! */
-	:focus {
-		outline: 0;
+	blockquote:before,blockquote:after,
+	q:before,q:after{
+		content:'';
+		content:none;
 	}
 	
-	/* remember to highlight inserts somehow! */
-	ins {
-		text-decoration: none;
-	}
-	del {
-		text-decoration: line-through;
+	:focus{
+		outline:0;
 	}
 	
-	/* tables still need 'cellspacing="0"' in the markup */
-	table {
-		border-collapse: collapse;
-		border-spacing: 0;
+	ins{
+		text-decoration:none;
+	}
+	del{
+		text-decoration:line-through;
+	}
+	
+	table{
+		border-collapse:collapse;
+		border-spacing:0;
 	}
 
 /* END OF RESET CSS */
 
 body {  
     font-family:arial;    
-    font-size:12px;  
+    font-size:12px; 
+	
 }  
   
   
+.hide {
+	margin: -9000px;
+	height: 0;
+	width: 0;
+}
+
+a:link { 
+			color: #ae469f; 
+			text-decoration: none;
+		}
+		
+		a:visited { 
+			color: #ae469f; 
+			text-decoration: none;
+		}
+		
+		a:hover { 
+			color: #c37fb9; 
+			text-decoration: none;
+		}
+	
+		a:active { 
+			color: #ae469f; 
+			text-decoration: none;
+		}
+		
+		/* Arrows before most links */
+		.pre-link {
+			margin-right: 5px;
+		}
+
 /* Slideshow styles (Home page)*/
 	ul.slideshow {  
 	    list-style:none;  
@@ -65,7 +95,7 @@ body {
 	    height:300px;  
 	    overflow:hidden;  
 	    position:relative;  
-	    margin:0;  
+	    margin:0 auto;  
 	    padding:0;  
 	      
 	}     
@@ -111,3 +141,139 @@ body {
 	    padding:0;  
 	}  
 /* End of slideshow CSS */
+
+#headerWrapper {
+	
+	background: url('images/bg-nav.png') repeat-x bottom ;
+	background-color: #d7e6e1;
+	height: 210px;
+}
+
+#header {
+	height: 140px;
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+	#header img {
+		margin-left: 20px;
+		margin-top: 20px;
+	}
+
+	#header #testemonial {
+		float: right;	
+		width: 451px;
+		height: 100px;
+		color: #2f3531;
+		background: url('images/bg-testimonials.png') no-repeat;
+		overflow: hidden;
+		font-weight: normal;
+		padding-top: 40px;
+		font-size: 1.2em;
+		text-align: center;
+	}
+
+#primaryNav {
+			position: relative;
+			margin: 0 auto;
+			width: 960px;
+			height: 70px;
+			overflow: hidden;
+			color: white;
+			line-height: 1.3em;
+			text-align: center;
+			padding-left: 100px;
+		}
+		
+		#primaryNav li {
+			list-style-type: none;
+			display: inline;
+		}
+			
+		#primaryNav a {
+			display: block;
+			overflow: hidden;
+			float: left;
+			position: relative;
+			color: #ffffff;
+			font-size: 1.1em;
+			font-weight: bold;
+			text-decoration: none;
+			padding: 20px;
+			height: 24px;
+		}
+		
+		#primaryNav a:hover {
+			border: 6px solid #9b0580;
+			border-right: 0;
+			border-left: 0;
+			padding-top: 14px;
+		}
+		
+		#primaryNav .selected {
+			background-color: #9b0580;
+			border: 6px solid #9b0580;
+			border-right: 0;
+			border-left: 0;
+			padding-top: 14px;
+		}
+		
+	#contentWrapper {
+		width: 960px;
+		margin: 0 auto;
+	}
+		
+	.introParagraph {
+		background-color: #cccccc;
+		width: 920px;
+		padding: 20px;
+		margin: 20px 0 20px 0;
+	}
+	
+	.column {
+		width: 300px;
+		color: #3c3c3c;
+		font-size: 1.2em;
+		line-height: 1.3em;
+		text-align: center;
+		padding-right: 10px;
+	}
+	
+	.firstCol {
+		margin-left: 20px;
+	}
+	
+	.column p {
+		padding-top: 10px;
+		width: 280px;
+		text-align: justify;
+	}
+
+
+	.floatLeft {
+		float:left;
+	}
+	
+	
+	#footer {
+		margin-top: 150px;
+		clear: both;
+		width: 100%;
+		text-align: center;
+		background: url('images/bg-footer.png') repeat-x;
+		height: 145px;
+	}
+	
+	#footer ul {
+		padding-top: 30px;
+	}
+	
+	#footer ul li {
+		display: inline;
+	}
+	
+	
+	#img-statement {
+		padding: 15px 0 10px 0;
+	}

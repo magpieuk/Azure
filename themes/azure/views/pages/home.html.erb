@@ -1,9 +1,9 @@
 <% content_for :head %>
-	<!-- Javascript for slideshow -->
+			<script type="text/javascript"> 
 	$(document).ready(function() {        
 	      
-	    //Execute the slideShow, set 4 seconds for each images  
-	    slideShow(2000);  
+	    //Execute the slideShow, set 3 seconds for each images  
+	    slideShow(3000);  
 	  
 	});  
 	  
@@ -28,16 +28,7 @@
 	      
 	    //Call the gallery function to run the slideshow      
 	    var timer = setInterval('gallery()',speed);  
-	      
-	    //pause the slideshow on mouse over  
-	    $('ul.slideshow').hover(  
-	        function () {  
-	            clearInterval(timer);     
-	        },    
-	        function () {  
-	            timer = setInterval('gallery()',speed);           
-	        }  
-	    );  
+	       
 	      
 	}  
 	  
@@ -69,38 +60,59 @@
 	    current.animate({opacity: 0.0}, 1000).removeClass('show');  
 	  
 	}  
+	</script>
 <% end %>
 
 
-<h2>Improving the lives of people who are disabled or disadvantaged.</h2>
-
-<ul class="slideshow">  
-    <li class="show"><a href="#"><img src="images/slideshow/1.png" width="960" height="300" title="Slide 1" alt="Short Description"/></a></li>  
-    <li><a href="#"><img src="images/slideshow/2.png" width="960" height="300" title="Slide 2" alt="Short Description"/></a></li>  
-    <li><a href="#"><img src="images/slideshow/3.png" width="960" height="300" title="Slide 3" alt="Short Description"/></a></li>  
-</ul>  
-
-<p class="introParagraph">
-	lorem ipsum
-</p>
-
-<div class="column">
-	<img src="homeCol1.png" alt="foo" />
-	<p>
-		lorem ipsum
-	</p>
-</div>
-
-<div class="column">
-	<img src="homeCol2.png" alt="foo" />
-	<p>
-		lorem ipsum
-	</p>
-</div>
-
-<div class="column">
-	<img src="homeCol3.png" alt="foo" />
-	<p>
-		lorem ipsum
-	</p>
-</div>
+<div id="contentWrapper">
+			
+		
+			<img id="img-statement" src="images/img-statement.jpg" alt="Improving the lives of people who are disabled or disadvantaged" />
+	
+			<ul class="slideshow">  
+			    <li class="show"><a href="#"><img src="images/slideshow/1.jpg" width="960" height="300" title="Slide 1" alt="Short Description 1"/></a></li>  
+			    <li><img src="images/slideshow/2.jpg" width="960" height="300" title="Slide 2" alt="Short Description 2"/></li>  
+			    <li><img src="images/slideshow/3.jpg" width="960" height="300" title="Slide 3" alt="Short Description 3"/></li>  
+				<li><img src="images/slideshow/4.jpg" width="960" height="300" title="Slide 2" alt="Short Description 4"/></li>  
+			    <li><img src="images/slideshow/5.jpg" width="960" height="300" title="Slide 3" alt="Short Description 5 "/></li>  
+				<li><img src="images/slideshow/6.jpg" width="960" height="300" title="Slide 2" alt="Short Description 6"/></li>
+                <li><img src="images/slideshow/7.jpg" width="960" height="300" title="Slide 2" alt="Short Description 6"/></li> 
+			</ul>  
+			
+			<p class="introParagraph">
+				lorem ipsum
+			</p>
+			
+			<div class="column floatLeft firstCol">
+				<img src="images/col1.jpg" alt="TODO" />
+				<p>
+					lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum
+					lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumv
+					<br/><br/>
+					lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum
+					lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum
+				</p>
+			</div>
+			
+			<div class="column floatLeft">
+				<img src="images/col1.jpg" alt="TODO" />
+				<p>
+					lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum
+					lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumv
+					<br/><br/>
+					lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum
+					lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum
+				</p>
+			</div>
+			
+			<div class="column floatLeft">
+				<img src="images/col1.jpg" alt="TODO" />
+				<p>
+					lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum
+					lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumv
+					<br/><br/>
+					lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum
+					lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum
+				</p>
+			</div>
+		</div> <!-- end contentWrapper -->
