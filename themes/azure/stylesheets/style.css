@@ -18,7 +18,7 @@
 	}
 	body{
 		line-height:1;
-		background: url('images/bg.jpg');
+		background: url('/theme/images/bg.jpg');
 	}
 	ol,ul{
 		list-style:none;
@@ -144,7 +144,7 @@ a:link {
 
 #headerWrapper {
 	
-	background: url('images/bg-nav.png') repeat-x bottom ;
+	background: url('/theme/images/bg-nav.png') repeat-x bottom ;
 	background-color: #d7e6e1;
 	height: 210px;
 }
@@ -166,7 +166,7 @@ a:link {
 		width: 451px;
 		height: 100px;
 		color: #2f3531;
-		background: url('images/bg-testimonials.png') no-repeat;
+		background: url('/theme/images/bg-testimonials.png') no-repeat;
 		overflow: hidden;
 		font-weight: normal;
 		padding-top: 40px;
@@ -261,7 +261,7 @@ a:link {
 		clear: both;
 		width: 100%;
 		text-align: center;
-		background: url('images/bg-footer.png') repeat-x;
+		background: url('/theme/images/bg-footer.png') repeat-x;
 		height: 145px;
 	}
 	
