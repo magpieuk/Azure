@@ -24,4 +24,4 @@ config.log_level = :info
 # Set to true in order to use Amazon's Simple Storage Service on your production machine
 # instead of the default file system for resources and images
 # Make sure to your bucket info is correct in amazon_s3.yml
-Refinery.s3_backend = false
+Refinery.s3_backend = true
