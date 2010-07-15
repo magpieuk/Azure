@@ -5,6 +5,7 @@ class Vacancy < ActiveRecord::Base
   validates_presence_of :job_title
   validates_uniqueness_of :job_title
 
+  belongs_to :file_download, :class_name => 'Resource'
 
 
 end
