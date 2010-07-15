@@ -1,0 +1,35 @@
+en:
+  admin:
+    system_tables:
+      index:
+        create_new: Create a new System Table
+        reorder: Reorder System Tables
+        reorder_done: Done Reordering System Tables
+        sorry_no_results: Sorry! There are no results found.
+        no_items_yet: There are no system_tables yet. Click "Create a new System Table" to add your first system table.
+      singular_name:
+        view_live: View this system table live <br/><em>(opens in a new window)</em>
+        edit: Edit this system table
+        delete: Remove this system table forever
+    locations:
+      index:
+        create_new: Create a new Location
+        reorder: Reorder Locations
+        reorder_done: Done Reordering Locations
+        sorry_no_results: Sorry! There are no results found.
+        no_items_yet: There are no locations yet. Click "Create a new Location" to add your first location.
+      singular_name:
+        view_live: View this location live <br/><em>(opens in a new window)</em>
+        edit: Edit this location
+        delete: Remove this location forever
+    categories:
+      index:
+        create_new: Create a new Category
+        reorder: Reorder Categories
+        reorder_done: Done Reordering Categories
+        sorry_no_results: Sorry! There are no results found.
+        no_items_yet: There are no categories yet. Click "Create a new Category" to add your first category.
+      singular_name:
+        view_live: View this category live <br/><em>(opens in a new window)</em>
+        edit: Edit this category
+        delete: Remove this category forever

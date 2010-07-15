@@ -1,0 +1,16 @@
+nl:
+  admin:
+    system_tables:
+      index:
+        create_new: Maak een nieuwe System Table
+        reorder: Wijzig de volgorde van de System Tables
+        reorder_done: Klaar met het wijzingen van de volgorde van de System Tables
+        sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+        no_items_yet: Er zijn nog geen system_tables. Druk op 'Maak een nieuwe System Table' om de eerste aan te maken.
+      singular_name:
+        view_live: Bekijk deze system table op de website <br/><em>(opent een nieuw venster)</em>
+        edit: Bewerk deze system table
+        delete: Verwijder deze system table voor eeuwig
+  system_tables:
+    show:
+      other: Andere System Tables

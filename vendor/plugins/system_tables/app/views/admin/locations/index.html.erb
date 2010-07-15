@@ -1,0 +1,27 @@
+<div id='actions'>
+
+  <ul>
+    <li>
+      <%= link_to "Return to System Tables", admin_system_tables_url, :class => "go_icon" %>
+    </li>
+    <li>
+      <%= link_to "Create New Location", new_admin_location_url, :class => "add_icon" %>
+    </li>
+  </ul>
+</div>
+<div id='records'>
+    <h1>Locations</h1>
+    <% if @locations.any? %>
+      <%= will_paginate @locations, :previous_label => '&laquo;', :next_label => '&raquo;' %>
+       <ul id='sortable_list'>
+        <%= render :partial => "sortable_list" %>
+       </ul>
+      <%= will_paginate @locations, :previous_label => '&laquo;', :next_label => '&raquo;' %>
+    <% else %>
+      <p>
+        <strong>
+          <%= t('.no_items_yet') %>
+        </strong>
+      </p>
+    <% end %>
+</div>

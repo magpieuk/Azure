@@ -313,7 +313,7 @@ body.login #header_content h1 {
 }
 #menu a {
   display: block;
-  padding: 9px 13px;
+  padding: 9px 9px;
   font-size: 13px;
   background: url('/images/refinery/nav_inactive_background.png') transparent repeat;
   margin-top:4px;

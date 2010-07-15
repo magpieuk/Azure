@@ -7,7 +7,7 @@ en:
         reorder_done: Done Reordering Staffs
         sorry_no_results: Sorry! There are no results found.
         no_items_yet: There are no staffs yet. Click "Create a new Staff" to add your first staff.
-      singular_name:
+      staff:
         view_live: View this staff live <br/><em>(opens in a new window)</em>
         edit: Edit this staff
         delete: Remove this staff forever

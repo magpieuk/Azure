@@ -7,5 +7,6 @@ class Staff < ActiveRecord::Base
 
   belongs_to :photo, :class_name => 'Image'
 
+  belongs_to :location
 
 end
