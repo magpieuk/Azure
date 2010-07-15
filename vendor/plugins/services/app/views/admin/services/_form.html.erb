@@ -13,7 +13,7 @@
   
   <div class='field'>
     <%= f.label :contact_id -%>
-    <%= f.text_field :contact_id -%>
+    <%= f.collection_select :contact_id, @contacts, :id, :name, {:prompt => :true} -%>
   </div>
   
   <div class='field'>
