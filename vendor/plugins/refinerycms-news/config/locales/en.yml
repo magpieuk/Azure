@@ -1,0 +1,34 @@
+en:
+  plugins:
+    news:
+      title: News
+  admin:
+    news_items:
+      news_item:
+        view_live: "View this news item live <br/><em>(opens in a new window)</em>"
+        edit: "Edit this news item"
+        delete: "Remove this news item forever"
+      index:
+        actions: Actions
+        create: "Create News Item"
+        news_item: News
+        no_items: "Sorry, no results found."
+        no_items_yet: 'There are no news item entries yet. Click "Create News Item" to add your first news item entries.'
+  news_items:
+    show:
+      back_to_index: "Back to all news"
+      published: Published
+      no_items: "Sorry we haven't posted up any news yet."
+      read_more: Read more
+    recent_posts:
+      recent_posts: Recent Posts
+    index:
+      published: Published
+  activerecord:
+    attributes:
+      news_item:
+        title: Title
+        body: Body
+        publish_date: Publish date
+    models:
+      news_item: News Item
