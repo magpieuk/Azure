@@ -74,7 +74,7 @@ dependencies:
     version: ">= 0"
     require: 
     - json/pure
-  sauberia-aws-s3: 
+  aws-s3: 
     group: 
     - :default
     version: ">= 0"
@@ -107,10 +107,14 @@ specs:
     version: 2.1.5
 - builder: 
     version: 2.1.2
-- culerity: 
-    version: 0.2.10
 - mime-types: 
     version: "1.16"
+- xml-simple: 
+    version: 1.0.12
+- aws-s3: 
+    version: 0.6.2
+- culerity: 
+    version: 0.2.10
 - nokogiri: 
     version: 1.4.2
 - rack-test: 
@@ -158,11 +162,6 @@ specs:
     version: 1.3.0
 - rspec-rails: 
     version: 1.3.2
-- xml-simple: 
-    version: 1.0.12
-- sauberia-aws-s3: 
-    version: 0.6.2.1254423624
-    source: 1
 - sqlite3-ruby: 
     version: 1.3.1
 - test-unit: 
@@ -171,7 +170,7 @@ specs:
     version: 0.3.2
 - will_paginate: 
     version: 2.3.14
-hash: cde8c64f3130a280c83b83d65b1018e253a136de
+hash: 43a06a7df31ef2ffa947882956a8b54d971305f9
 sources: 
 - Git: 
     uri: git://github.com/parndt/json.git
@@ -179,9 +178,5 @@ sources:
     require: json/pure
     git: git://github.com/parndt/json.git
     ref: 34ad345d48764f3acf87a032b3efb4b1908b7213
-- Git: 
-    uri: git://github.com/sauberia/aws-s3.git
-    git: git://github.com/sauberia/aws-s3.git
-    ref: 72a894875ce199aeac187aa75ebf638424134688
 - Rubygems: 
     uri: http://gemcutter.org
