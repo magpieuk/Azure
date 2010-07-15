@@ -1,5 +1,5 @@
 production:
-  bucket_name: azureenterprises
+  bucket_name: azureent
   access_key_id: ENV['S3_KEY']
   secret_access_key: ENV['S3_SECRET']
-  distribution_domain: azureenterprises.s3.amazonaws.com  
+  distribution_domain: azureent.s3.amazonaws.com  
