@@ -26,5 +26,10 @@
     <%= f.collection_select :category_id, @categories, :id, :name, {:prompt => :true} -%>
   </div>
   
+  <div class='field'>
+    <%= f.label :album_id, "Choose a photo album to display at the top of this service page" %>
+    <%= f.collection_select :album_id, Album.all, :id, :name, :include_blank => true %>
+  </div>
+  
   <%= render :partial => "/shared/admin/form_actions", :locals => {:f => f, :continue_editing => false} %>
 <% end -%>
