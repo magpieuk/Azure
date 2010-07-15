@@ -7,7 +7,7 @@ en:
         reorder_done: Done Reordering Vacancies
         sorry_no_results: Sorry! There are no results found.
         no_items_yet: There are no vacancies yet. Click "Create a new Vacancy" to add your first vacancy.
-      singular_name:
+      vacancy:
         view_live: View this vacancy live <br/><em>(opens in a new window)</em>
         edit: Edit this vacancy
         delete: Remove this vacancy forever
