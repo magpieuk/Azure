@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100715165313) do
+ActiveRecord::Schema.define(:version => 20100715184425) do
 
   create_table "images", :force => true do |t|
     t.integer  "parent_id"
@@ -150,7 +150,6 @@ ActiveRecord::Schema.define(:version => 20100715165313) do
     t.datetime "created_at"
   end
 
-  add_index "slugs", ["name", "sluggable_type", "scope", "sequence"], :name => "index_slugs_on_name_and_sluggable_type_and_scope_and_sequence", :unique => true
   add_index "slugs", ["sluggable_id"], :name => "index_slugs_on_sluggable_id"
 
   create_table "staffs", :force => true do |t|
@@ -167,6 +166,20 @@ ActiveRecord::Schema.define(:version => 20100715165313) do
   end
 
   add_index "staffs", ["id"], :name => "index_staffs_on_id"
+
+  create_table "testimonials", :force => true do |t|
+    t.text     "quote"
+    t.string   "name"
+    t.string   "company"
+    t.string   "job_title"
+    t.string   "website"
+    t.date     "quoted_on"
+    t.integer  "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "testimonials", ["id"], :name => "index_testimonials_on_id"
 
   create_table "user_plugins", :force => true do |t|
     t.integer "user_id"
@@ -201,8 +214,19 @@ ActiveRecord::Schema.define(:version => 20100715165313) do
     t.integer  "position"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "file_download_id"
   end
 
   add_index "vacancies", ["id"], :name => "index_vacancies_on_id"
+
+  create_table "vacs", :force => true do |t|
+    t.integer  "jobdesc_id"
+    t.text     "soemthing"
+    t.integer  "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "vacs", ["id"], :name => "index_vacs_on_id"
 
 end
