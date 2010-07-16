@@ -365,8 +365,9 @@ a:link {
 
 ul li.album {display:block;float:left; margin-right:10px;margin-top:10px;}
 
-ul li.album img a {border:3px solid #808080;}
-ul li.album img a:hover { border: 3px solid #9b0580; -o-transitionduration: 0.3s; -webkit-transitionduration: 0.3s; }
+ul li.album img {border:3px solid #808080;}
+ul li.album img:hover { border: 3px solid #9b0580; -o-transitionduration: 0.3s; -webkit-transitionduration: 0.3s; }
+ul li.album p { text-align: center; }
 
 ul#staff-list { list-style-type:none; }
 
