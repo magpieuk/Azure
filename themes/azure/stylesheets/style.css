@@ -275,23 +275,23 @@ a:link {
         .col1 {
                 width: 252px;
                 margin: 0 auto;
-                background: url('theme/images/col1.jpg') no-repeat top center;
+                background: url('/theme/images/col1.jpg') no-repeat top center;
         }
         .col2 {
                 width: 252px;
                 margin: 0 auto;
-                background: url('theme/images/col2.jpg') no-repeat top center;
+                background: url('/theme/images/col2.jpg') no-repeat top center;
         }
         .col3 {
                 width: 252px;
                 margin: 0 auto;
-                background: url('theme/images/col3.jpg') no-repeat top center;
+                background: url('/theme/images/col3.jpg') no-repeat top center;
         }
         
         .colBottom {
                 width: 242px;
                 margin: 0 auto;
-                background: url('theme/images/bg-img-bottom.png') no-repeat bottom center;
+                background: url('/theme/images/bg-img-bottom.png') no-repeat bottom center;
                 padding: 152px 0 30px 10px;
                 color: #fff;
         }
