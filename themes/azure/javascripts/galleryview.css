@@ -55,7 +55,7 @@
 /* PANEL OVERLAY CONTENT */
 .panel .panel-overlay { color: white; font-size: 0.7em; }
 .panel .panel-overlay a { color: white; text-decoration: underline; font-weight: bold; }
-.panel .panel-overlay h2{ color: white; font-size: 0.7em; }
+.panel .panel-overlay h2{ color: white; }
 /* FILMSTRIP */
 /* 'margin' will define top/bottom margin in completed gallery */
 .filmstrip { margin: 5px; }
