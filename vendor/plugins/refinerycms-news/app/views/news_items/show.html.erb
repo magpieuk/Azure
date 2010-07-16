@@ -1,5 +1,5 @@
 <% content_for :body_content_left do %>
-  <h1><%= @news_item.title %></h1>
+  <h2><%= @news_item.title %></h2>
   <p>
     <small><%= t('.published') %> <%= l(@news_item.publish_date, :format => :long) %></small>
   </p>
