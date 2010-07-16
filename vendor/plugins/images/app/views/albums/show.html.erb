@@ -3,14 +3,16 @@
   <script type="text/javascript" src="/theme/javascripts/jquery.galleryview-1.1.js"></script>
   <script type="text/javascript" src="/theme/javascripts/jquery.timers-1.1.2.js"></script>
   <script type="text/javascript">
-    $(document).ready(function() {
-      $('#photos').galleryView({
-            panel_width: 960,
-            panel_height: 300,
-            frame_width: 100,
-            frame_height: 100});
-    });
-  </script>
+	$(document).ready(function(){
+		$('#photos').galleryView({
+			panel_width: 800,
+			panel_height: 300,
+			frame_width: 100,
+			frame_height: 100
+		});
+	});
+</script>
+
 <% end %>
 <% content_for :body_content_left do %>
 
