@@ -3,9 +3,9 @@
     <% @albums.each do |album| %>
     <li class="album">
         <% if album.cover_image.present? %>
-          <%= image_fu album.cover_image, :medium %>
+          <%= image_fu album.cover_image, :grid %>
         <% else %>
-          <%= image_fu album.images.first, :medium %>
+          <%= image_fu album.images.first, :grid %>
         <% end %>
         <p><%= link_to album.name, album_url(album) %></p>
       </li>
