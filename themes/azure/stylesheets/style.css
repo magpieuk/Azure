@@ -51,7 +51,7 @@ a
 a:hover
 { text-decoration: none; color: #9b0580; }
 h1
-{ color: #333; font-size: 4em; padding-bottom: 7px; text-shadow: 0 1px 0 #fff; }
+{ color: #333; font-size: 4em; padding-bottom: 7px; }
 h2
 { color: #333; font-size: 1.8em; line-height:1em; padding-bottom: 7px; margin: 10px 0; }
 h3
@@ -302,7 +302,7 @@ a:link {
 	
 #footer { margin-top: 150px; clear: both; text-align: center; background: #4d4d4d url('/theme/images/bg-footer.png') repeat-x; font-size: 1.1em; color: #999; }
         
-        #footer #cont { margin: 0 auto; width: 960px; height: 400px; }
+        #footer #cont { margin: 0 auto; width: 960px; height: 500px; }
         
         #footer #cont #top ul {
                 padding-top: 30px;
@@ -364,31 +364,15 @@ a:link {
 /* -- Global Styles --*/
 
 
-ul#staff-list {
-  list-style-type:none;
-}
+ul#staff-list { list-style-type:none; }
 
-ul#staff-list li{
-  padding:20px 0;
-  border-bottom:2px solid #eee;
-  float:left;
-}
+ul#staff-list li{ padding:20px 0; border-bottom:2px solid #eee; float:left; }
 
-.staff-photo {
-  float:left;
-  width: 150px;
-}
+.staff-photo { float:left; width: 150px; }
 
-.staff-details {
-  float:left;  
-  padding-left:30px;
-  width:430px;
-}
+.staff-details { float:left; padding-left:30px; width:430px; }
 
-.staff-photo img {
-	width: 133px;
-	height: 180px;
-}
+.staff-photo img { width: 133px; height: 180px; }
 
 /* --- Form Styles --- */
 
@@ -398,7 +382,7 @@ label { width: 4em; float: left; text-align: right; margin-right: 0.5em; display
 
 input { color: #781351; border: 1px solid #781351; margin-left: 50px; }
 
-textarea { background: #7ac4d4; border: 1px solid #781351; }
+textarea { background: url('/theme/images/wd-logo-small.png') no-repeat bottom right; border: 1px solid #781351; }
 
 .field { margin-top: 10px; }
 select { color: #781351; border: 1px solid #781351; }
