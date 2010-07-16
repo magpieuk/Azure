@@ -9,4 +9,8 @@ class Staff < ActiveRecord::Base
 
   belongs_to :location
 
+  def summary
+    "#{self.name}, #{self.job_title}" rescue ""
+  end
+
 end
