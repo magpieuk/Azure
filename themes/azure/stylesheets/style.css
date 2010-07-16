@@ -251,10 +251,7 @@ a:link {
 			padding-top: 24px;
 		}
 		
-	#contentWrapper {
-		width: 960px;
-		margin: 0 auto;
-	}
+	#contentWrapper { width: 960px; margin: 0 auto; font-size: 1.1em; }
 		
 	.introParagraph {
 		background-color: #cccccc;
@@ -266,7 +263,6 @@ a:link {
   .column {
                 width: 300px;
                 color: #3c3c3c;
-                font-size: 1.2em;
                 line-height: 1.3em;
                 text-align: center;
                 padding-right: 10px;
@@ -308,12 +304,7 @@ a:link {
 	}
 	
 	
-#footer {
-                margin-top: 150px;
-                clear: both;
-                text-align: center;
-                background: #4d4d4d url('/theme/images/bg-footer.png') repeat-x;
-        }
+#footer { margin-top: 150px; clear: both; text-align: center; background: #4d4d4d url('/theme/images/bg-footer.png') repeat-x; font-size: 1.1em; }
         
         #footer #cont { margin: 0 auto; width: 960px; height: 500px; }
         
