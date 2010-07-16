@@ -1,9 +1,23 @@
+<%= render :partial => "/shared/slider" %>
+
 <% content_for :body_content_title do %>
   <%= @service.title %>
 <% end %>
 
 <% content_for :body_content_left do %>
   <h2><%= h @service.title %></h2>
+  <% if @service.album.present? %>
+  <ul class="slideshow">
+    <% @service.album.images.each_with_index do |img, index|%>
+    <% if index == 0 %>
+      <li class="show"><a href="#"><%= image_fu img %></a></li>
+    <% else %>
+      <li><%= image_fu img %></li>
+    <% end  %>
+  <% end %>
+  </ul>
+  <% end  %>
+
   <%= @service.content %>
   <h2><%= @service.staff.summary rescue "No Staff Member Assigned"%> </h2>
   <%= image_fu @service.staff.photo rescue nil%>
