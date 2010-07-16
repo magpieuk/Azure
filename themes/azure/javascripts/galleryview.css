@@ -42,7 +42,7 @@
 .loader { background: url(loader.gif) center center no-repeat #ddd; }
 
 /* GALLERY PANELS */
-.panel {}
+.panel {text-align: center; background-color: black;}
 
 /* DEFINE HEIGHT OF PANEL OVERLAY */
 /* NOTE - It is best to define padding here as well so overlay and background retain identical dimensions */
