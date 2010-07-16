@@ -209,15 +209,15 @@ a:link {
 			border: 6px solid #9b0580;
 			border-right: 0;
 			border-left: 0;
-			padding-top: 14px;
+			padding-top: 24px;
 		}
 		
 		#primaryNav li.selected a{
 			background-color: #9b0580;
-			border: 16px solid #9b0580;
+			border: 6px solid #9b0580;
 			border-right: 0;
 			border-left: 0;
-			padding-top: 34px;
+			padding-top: 14px;
 		}
 		
 	#contentWrapper {
