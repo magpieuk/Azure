@@ -1,35 +1,25 @@
-<% content_for :body_content_title do %>
-  <%= @album.name %>
-<% end %>
+<% content_for :head do %>
 
+<% end %>
 <% content_for :body_content_left do %>
-  
-  <div>
-    <h3>Name</h3>
-    <%= @album.name %>
-  </div>
-  
-  <div>
-    <h3>Cover Image</h3>
-    <%= image_fu @album.cover_image, nil %>
-  </div>
-  
-  <div>
-    <h3>Show In Gallery</h3>
-    <%= @album.show_in_gallery %>
-  </div>
-  
-<% end %>
 
-<% content_for :body_content_right do %>
-  <h2><%= t('.other') %></h2>
-  <ul id="albums">
-    <% @albums.each do |album| %>
-      <li>
-        <%= link_to album.name, album_url(album) %>
-      </li>
+  <div id="photos" class="galleryview">
+    <% @album.images.each do |img| %>
+    <div class="panel">
+      <%= image_fu img %>
+      <div class="panel-overlay">
+        <h2><%= img.caption %></h2>
+      </div>
+    </div>
+    <% end %>
+  </div>
+
+  <ul class="filmstrip">
+    <% @album.images.each do |img| %>
+      <li><%= image_fu img, :preview %></li>
     <% end %>
   </ul>
+
 <% end %>
 
 <%= render :partial => "/shared/content_page" %>
