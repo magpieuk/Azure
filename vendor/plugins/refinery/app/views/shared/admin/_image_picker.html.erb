@@ -1,3 +1,5 @@
+<% skip_album = false unless skip_album %>
+
 <%
   description ||= "image"
   thumbnail ||= "medium"
@@ -6,7 +8,8 @@
   current_image_link_href = insert_admin_images_url(:dialog => true,
                                                     :callback => "image_picker_#{randomiser}_changed",
                                                     :width => 866,
-                                                    :height => 510)
+                                                    :height => 510,
+                                                    :skip_album => skip_album)
   current_image_title = t('.change', :what =>  description.titleize)
 -%>
 <%= link_to t('.show'), "", :id => "current_image_toggler_#{randomiser}" if toggle_image_display %>
