@@ -352,13 +352,13 @@
 			}
 			
 			//Add navigation buttons
-			$('<img />').addClass('nav-next').attr('src',img_path+opts.nav_theme+'/next.png').appendTo(j_gallery).css({
+			$('<img />').addClass('nav-next').attr('src',img_path+opts.nav_theme+'/next.gif').appendTo(j_gallery).css({
 				'position':'absolute',
 				'cursor':'pointer',
 				'top':(opts.filmstrip_position=='top'?0:opts.panel_height)+frame_margin_top+((opts.frame_height-22)/2)+'px',
 				'right':(gallery_width/2)-(wrapper_width/2)-10-22+'px'
 			}).click(showNextItem);
-			$('<img />').addClass('nav-prev').attr('src',img_path+opts.nav_theme+'/prev.png').appendTo(j_gallery).css({
+			$('<img />').addClass('nav-prev').attr('src',img_path+opts.nav_theme+'/prev.gif').appendTo(j_gallery).css({
 				'position':'absolute',
 				'cursor':'pointer',
 				'top':(opts.filmstrip_position=='top'?0:opts.panel_height)+frame_margin_top+((opts.frame_height-22)/2)+'px',
