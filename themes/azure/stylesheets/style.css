@@ -302,7 +302,7 @@ a:link {
 	
 #footer { margin-top: 150px; clear: both; text-align: center; background: #4d4d4d url('/theme/images/bg-footer.png') repeat-x; font-size: 1.1em; color: #999; }
         
-        #footer #cont { margin: 0 auto; width: 960px; height: 500px; }
+        #footer #cont { margin: 0 auto; width: 960px; height: 400px; }
         
         #footer #cont #top ul {
                 padding-top: 30px;
