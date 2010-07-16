@@ -1,11 +1,15 @@
-<% content_for :body_content_left do %>
-  <ul id="services">
-    <% @services.each do |service| %>
-      <li>
-        <%= link_to service.title, service_url(service) %>
-      </li>
-    <% end %>
-  </ul>
+<% content_for :sidebar do %>
+  <div id="sidebar">
+    <div id="container">
+      <ul class="clearfix">
+        <% @services.each do |service| %>
+          <li>
+            <%= link_to service.title, service_url(service) %>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
 <% end %>
 
 <%= render :partial => "/shared/content_page" %>
