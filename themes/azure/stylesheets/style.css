@@ -174,10 +174,11 @@ a:link {
 		text-align: center;
 	}
 	
-	.testemonial {
+	.testemonial blockquote {
 		float: right;	
 		width: 451px;
 		height: 100px;
+		border 10px solid gold;
 	}
 
 #primaryNav {
