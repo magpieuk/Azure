@@ -24,105 +24,20 @@
 <% content_for :body_content_left do %>
 
 <div id="comics" class="galleryview">
+        <% @album.images.each do |img|  %>
 	<div class="panel">
-
-			<img src="http://spaceforaname.com/img/sites/achewood.jpg" />
-
+		<%= image_fu img %>
 		<div class="panel-overlay">
-			<h2>Achewood</h2>
-			<p>"Achewood," like wormwood, was used by antebellum slaves in the production of "achewater," a long-since outmoded and outlawed Southern beverage.</p>
+			<h2><%= img.caption %></h2>
 		</div>
 	</div>
+        <% end %>
 
-	<div class="panel">
-
-			<img src="http://spaceforaname.com/img/sites/ctrlaltdel.jpg" />
-
-		<div class="panel-overlay">
-			<h2>CTRL-ALT-DEL</h2>
-			<p>Not just a useful keystroke, but also a webcomic about a video game addict, his best friend, his wife, and his sentient XBox.</p>
-		</div>
-	</div>
-	<div class="panel">
-
-
-			<img src="http://spaceforaname.com/img/sites/dieselsweeties.jpg" />
-
-		<div class="panel-overlay">
-			<h2>Diesel Sweeties</h2>
-			<p>Pixelated gossip, romance and robot abuse, served up daily.</p>
-		</div>
-	</div>
-	<div class="panel">
-
-			<img src="http://spaceforaname.com/img/sites/dinosaurcomics.jpg" />
-
-
-		<div class="panel-overlay">
-			<h2>Dinosaur Comics</h2>
-			<p>Ryan North uses the same six panels for every comic, only changing up the dialogue, to hilarious effect.</p>
-		</div>
-	</div>
-	<div class="panel">
-
-			<img src="http://spaceforaname.com/img/sites/extralife.jpg" />
-
-		<div class="panel-overlay">
-
-			<h2>Extra Life</h2>
-			<p>A well executed comic about all things gaming and entertainment.</p>
-		</div>
-	</div>
-	<div class="panel">
-
-			<img src="http://spaceforaname.com/img/sites/penny-arcade.jpg" />
-
-		<div class="panel-overlay">
-			<h2>Penny Arcade</h2>
-
-			<p>What is there to say?  Perhaps the most famous webcomic, detailing the lives of Gabe and Tycho</p>
-		</div>
-	</div>
-	<div class="panel">
-
-			<img src="http://spaceforaname.com/img/sites/pvp.jpg" />
-
-		<div class="panel-overlay">
-			<h2>PvP</h2>
-			<p>A gaming magazine office, where no one ever works, the cat tries to conquer the planet, and a big blue troll roams the halls.</p>
-
-		</div>
-	</div>
-	<div class="panel">
-
-			<img src="http://spaceforaname.com/img/sites/wondermark.jpg" />
-
-		<div class="panel-overlay">
-			<h2>Wondermark</h2>
-			<p>Wonderfully illustrated jocularity.</p>
-		</div>
-
-	</div>
-	<div class="panel">
-
-			<img src="http://spaceforaname.com/img/sites/xkcd.jpg" />
-
-		<div class="panel-overlay">
-			<h2>xkcd</h2>
-			<p>A webcomic of romance, sarcasm, math and language.</p>
-		</div>
-	</div>
 
     <ul class="filmstrip">
-    	<li><a href="http://www.achewood.com" target="_blank"><img src="http://spaceforaname.com/img/sites/frame-achewood.jpg" alt="Achewood" title="Achewood" /></a></li>
-    	<li><a href="http://ctrlaltdel-online.com/" target="_blank"><img src="http://spaceforaname.com/img/sites/frame-ctrlaltdel.jpg" alt="CTRL-ALT-DEL" title="CTRL-ALT-DEL" /></a></li>
-    	<li><a href="http://www.dieselsweeties.com" target="_blank"><img src="http://spaceforaname.com/img/sites/frame-dieselsweeties.jpg" alt="Diesel Sweeties" title="Diesel Sweeties" /></a></li>
-    	<li><a href="http://www.qwantz.com" target="_blank"><img src="http://spaceforaname.com/img/sites/frame-dinosaurcomics.jpg" alt="Dinosaur Comics" title="Dinosaur Comics" /></a></li>
-    	<li><a href="http://www.myextralife.com/" target="_blank"><img src="http://spaceforaname.com/img/sites/frame-extralife.jpg" alt="Extra Life" title="Extra Life" /></a></li>
-    	<li><a href="http://www.penny-arcade.com" target="_blank"><img src="http://spaceforaname.com/img/sites/frame-penny-arcade.jpg" alt="Penny Arcade" title="Penny Arcade" /></a></li>
-    	<li><a href="http://www.pvponline.com" target="_blank"><img src="http://spaceforaname.com/img/sites/frame-pvp.jpg" alt="PvP" title="PvP" /></a></li>
-    	<li><a href="http://www.wondermark.com" target="_blank"><img src="http://spaceforaname.com/img/sites/frame-wondermark.jpg" alt="Wondermark" title="Wondermark" /></a></li>
-    	<li><a href="http://www.xkcd.com" target="_blank"><img src="http://spaceforaname.com/img/sites/frame-xkcd.jpg" alt="xkcd" title="xkcd" /></a></li>
+      <% @album.images.each do |img| %>
+    	<li><%= image_fu img, :preview %></li>
+      <% end %>
     </ul>
 </div>
 
