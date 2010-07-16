@@ -50,6 +50,14 @@
 
 /* END OF RESET CSS */
 
+clearfix:after
+{ content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.clearfix {display: inline-table; min height: 10px;}
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+
+
 body {  
     font-family:arial;    
     font-size:12px; 
@@ -280,3 +288,25 @@ a:link {
 	#img-statement {
 		padding: 15px 0 10px 0;
 	}
+
+	
+	
+	#sidebar { width: 280px; min-height: 400px; float: left; background: url('images/bg-sidebar.png') repeat top left; }
+#sidebar #container { float: left; width: 320px; padding-top: 20px; }
+#sidebar #container ul
+{ list-style-type: disc; font-size: 1.1em; }
+#sidebar #container ul li
+{ float: left; display: block; width: 280px; }
+#sidebar #container ul a
+{ display: block; float: left; padding: 7px; margin: 0 5px; color: #333; width: 280px; height: 45px; }
+#sidebar #container ul a:hover
+{ background: url(/dev/wd/images/bg-sidebar-hover.png) no-repeat top right; padding: 7px; margin: 0 5px; color: #fff; -webkit-transition-duration: 0.3s; -o-transition-duration: 0.3s; height: 45px; }
+#sidebar #container ul li.selected a
+{ background: url(/dev/wd/images/bg-sidebar-hi.png) no-repeat top right; padding: 7px; margin: 0 5px; color: #fff; -webkit-transition-duration: 0.3s; -o-transition-duration: 0.3s; height: 45px; }
+#maincolumn { padding: 0 10px 10px 40px; float: left; margin-top: 10px; margin-bottom: 10px; min-width: 610px; }
+#maincolumn .box-1 { float: left; width: 100%; margin-bottom: 20px; }
+#maincolumn .box-2 { background: #e6e6e6; padding: 7px; float: left; width: 100%; margin-bottom: 20px; }
+#maincolumn #servicesimg { background-image: url('images/600wide2.jpg'); width: 600px; height: 300px; }
+
+/* -- Global Styles --*/
+
