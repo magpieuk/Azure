@@ -161,7 +161,7 @@ a:link {
 		margin-top: 20px;
 	}
 
-	#header .testemonial {
+	#header #testemonial {
 		float: right;	
 		width: 451px;
 		height: 100px;
@@ -172,6 +172,12 @@ a:link {
 		padding-top: 40px;
 		font-size: 1.2em;
 		text-align: center;
+	}
+	
+	.testemonial {
+		float: right;	
+		width: 451px;
+		height: 100px;
 	}
 
 #primaryNav {
