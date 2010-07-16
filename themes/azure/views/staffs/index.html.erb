@@ -1,0 +1,22 @@
+<% content_for :body_content_left do %>
+
+  <ul id="staff-list">
+    <% @staffs.each do |staff| %>
+      <li class="clearfix">
+        <div class="staff-photo">
+          <%= image_fu staff.photo %>
+        </div>
+        <div class="staff-details">
+          <h2><%= h staff.name %>, <%= h staff.job_title %></h2>
+          <p><strong>Email:</strong> <%= mail_to staff.email %></p>
+          <p><strong>Telephone:</strong> <%= staff.telephone %></p>
+          <%= staff.description %>
+        </div>
+        <div class="clearfix"></div>
+      </li>
+    <% end %>
+  </ul> 
+  
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>

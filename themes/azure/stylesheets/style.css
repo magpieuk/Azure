@@ -16,10 +16,7 @@
 		vertical-align:baseline;
 		background:transparent;
 	}
-	body{
-		line-height:1;
-		background: url('/theme/images/bg.jpg');
-	}
+  
 	ol,ul{
 		list-style:none;
 	}
@@ -47,6 +44,26 @@
 		border-collapse:collapse;
 		border-spacing:0;
 	}
+ 
+p {line-height:1.5em; margin:10px 0;}
+
+a
+{ color: #9b0580; text-decoration: none; font-weight: bold; }
+a:hover
+{ text-decoration: none; color: #9b0580; }
+h1
+{ color: #333; font-size: 4em; padding-bottom: 7px; text-shadow: 0 1px 0 #fff; }
+h2
+{ color: #333; font-size: 1.8em; line-height:1em; padding-bottom: 7px; margin: 10px 0; }
+h3
+{ color: #333; font-size: 1.3em;  }
+h4
+{ color: #333; font-size: 1.2em; }
+
+        body{
+                line-height:1.1em;
+                background: url('/theme/images/bg.jpg');
+        }
 
 /* END OF RESET CSS */
 
@@ -312,4 +329,31 @@ a:link {
 #maincolumn #servicesimg { background-image: url('/theme/images/600wide2.jpg'); width: 600px; height: 300px; margin:0 auto;}
 
 /* -- Global Styles --*/
+
+
+ul#staff-list {
+  list-style-type:none;
+}
+
+ul#staff-list li{
+  padding:20px 0;
+  border-bottom:2px solid #eee;
+  float:left;
+}
+
+.staff-photo {
+  float:left;
+  width: 150px;
+}
+
+.staff-details {
+  float:left;  
+  padding-left:30px;
+  width:430px;
+}
+
+.staff-photo img {
+	width: 133px;
+	height: 180px;
+}
 
