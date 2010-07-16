@@ -1,4 +1,5 @@
 <% body_content = @page[:body] if (body_content = yield :body_content_left).blank? %>
+<% hide_title ||= false %>
 
 <% if (sidebar = yield :sidebar).present? %>
   <%= sidebar %>
@@ -9,7 +10,11 @@
 <% else %>
   <div id="maincolumn-full" class="clearfix"> 
 <% end %>
-    <h2><%= @page.title %></h2>
+    
+    <% if hide_title.blank? %>
+      <h2><%= @page.title %></h2>
+    <% end %>
+    
     <div class="box-1">
       <%= body_content %>
     </div>
