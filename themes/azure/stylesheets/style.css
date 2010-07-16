@@ -390,3 +390,53 @@ ul#staff-list li{
 	height: 180px;
 }
 
+/* --- Form Styles --- */
+
+<style type="text/css">
+
+.inquiries {
+width: 700px;
+margin: 0 auto;
+}
+
+label
+{
+width: 4em;
+float: left;
+text-align: right;
+margin-right: 0.5em;
+display: block
+}
+
+input
+{
+color: #781351;
+background: #7ac4d4;
+border: 1px solid #781351
+margin-left: 50px;
+}
+
+textarea
+{
+color: #781351;
+background: #7ac4d4;
+border: 1px solid #781351;
+}
+
+.field {
+margin-top: 10px;
+}
+select
+{
+color: #781351;
+background: #7ac4d4;
+border: 1px solid #781351
+}
+
+#inquiry_submit{
+margin: 0 auto;
+margin-top: 10px;
+padding: 10px;
+margin-left: 150px;
+}
+</style>
