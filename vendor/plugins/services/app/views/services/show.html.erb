@@ -36,7 +36,7 @@
     <div id="container">
       <ul class="clearfix">
         <% @services.each do |service| %>
-          <li <%= 'class="selected"' if service == @service %>
+          <li <%= 'class="selected"' if service == @service %>>
             <%= link_to service.title, service_url(service) %>
           </li>
         <% end %>
