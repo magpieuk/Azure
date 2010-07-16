@@ -161,7 +161,7 @@ a:link {
 		margin-top: 20px;
 	}
 
-	#header #testemonial {
+	#header .testemonial {
 		float: right;	
 		width: 451px;
 		height: 100px;
