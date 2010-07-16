@@ -14,6 +14,7 @@ en:
         news_item: News
         no_items: "Sorry, no results found."
         no_items_yet: 'There are no news item entries yet. Click "Create News Item" to add your first news item entries.'
+        read_more: Read more...
   news_items:
     show:
       back_to_index: "Back to all news"
