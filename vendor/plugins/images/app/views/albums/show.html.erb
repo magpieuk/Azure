@@ -1,4 +1,4 @@
-<%= content_for :head do %>
+<% content_for :head do %>
 
 <% end %>
 <% content_for :body_content_left do %>
@@ -15,15 +15,11 @@
   </div>
 
   <ul class="filmstrip">
-    <% @album.images.each do |img|    %>
-      <li><%= image_fu img :preview %></li>
+    <% @album.images.each do |img| %>
+      <li><%= image_fu img, :preview %></li>
     <% end %>
   </ul>
 
 <% end %>
-
-
-
-
 
 <%= render :partial => "/shared/content_page" %>
