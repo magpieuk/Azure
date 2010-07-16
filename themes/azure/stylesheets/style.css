@@ -148,7 +148,11 @@ a:link {
 	    color:#fff;  
 	    background:#000;  
 	    z-index:500;  
-	}  
+	}
+
+        .smallSlideshow {
+            width: 600px;
+        }
 	  
 	#slideshow-caption .slideshow-caption-container {  
 	    padding:5px 10px;     
