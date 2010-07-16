@@ -3,11 +3,11 @@
     <% @albums.each do |album| %>
       <li>
         <% if album.cover_image.present? %>
-          <%= image_fu album.cover_image, :preview %>
+          <%= image_fu album.cover_image, :medium %>
         <% else %>
           <%= image_fu album.images.first, :preview %>
         <% end %>
-        <%= link_to album.name, album_url(album) %>
+        <p><%= link_to album.name, album_url(album) %></p>
       </li>
     <% end %>
   </ul>
