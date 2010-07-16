@@ -2,6 +2,11 @@
   <ul id="albums">
     <% @albums.each do |album| %>
       <li>
+        <% if album.cover_image.present? %>
+          <%= image_fu album.cover_image, :preview %>
+        <% else %>
+          <%= image_fu album.images.first, :preview %>
+        <% end %>
         <%= link_to album.name, album_url(album) %>
       </li>
     <% end %>

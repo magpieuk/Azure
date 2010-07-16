@@ -20,7 +20,7 @@ class AlbumsController < ApplicationController
 protected
 
   def find_all_albums
-    @albums = Album.find(:all, :order => "position ASC")
+    @albums = Album.find(:all, :conditions => ["show_in_gallery = ?",true],:order => "position ASC")
   end
 
   def find_page
