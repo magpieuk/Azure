@@ -55,15 +55,11 @@ h1
 h2
 { color: #333; font-size: 1.8em; line-height:1em; padding-bottom: 7px; margin: 10px 0; }
 h3
-{ color: #333; font-size: 1.3em;  }
+{ color: #333; font-size: 1.3em; line-height:1em; padding-bottom: 5px; margin: 7px 0; }
 h4
 { color: #333; font-size: 1.2em; }
 
-        body{
-                line-height:1.1em;
-                background: url('/theme/images/bg.jpg');
-                font-size:1em;
-        }
+        body{  line-height:1.1em; background: url('/theme/images/bg.jpg'); font-size:1em; }
 
 /* END OF RESET CSS */
 
@@ -75,11 +71,7 @@ clearfix:after
 .clearfix {display: block;}
 
 
-body {  
-    font-family:arial;    
-    font-size:12px; 
-	
-}  
+body {   font-family:arial; font-size:12px; }  
   
   
 .hide {
@@ -250,7 +242,7 @@ a:link {
 			padding-top: 24px;
 		}
 		
-	#contentWrapper { width: 960px; margin: 0 auto; font-size: 1.1em; }
+	#contentWrapper { width: 960px; margin: 0 auto; font-size: 1em; }
 		
 	.introParagraph {
 		background-color: #cccccc;
@@ -262,7 +254,7 @@ a:link {
   .column {
                 width: 300px;
                 color: #3c3c3c;
-                line-height: 1.3em;
+                line-height: 1em;
                 text-align: center;
                 padding-right: 10px;
         }
@@ -283,31 +275,19 @@ a:link {
                 background: url('/theme/images/col3.jpg') no-repeat top center;
         }
         
-        .colBottom { width: 242px; margin: 0 auto; background: url('/theme/images/bg-img-bottom.png') no-repeat bottom center; padding: 137px 0 15px 10px; color: #fff; }
+        .colBottom { width: 232px; margin: 0 auto; background: url('/theme/images/bg-img-bottom.png') no-repeat bottom center; padding: 137px 0 15px 10px; color: #fff; }
         
-        .column p {
-                padding-top: 10px;
-                width: 280px;
-                text-align: justify;
-        }
+        .column p { padding-top: 10px; width: 280px; text-align: justify; }
 
-
-	.floatLeft {
-		float:left;
-	}
+	.floatLeft { float:left; }
 	
-	
-#footer { margin-top: 150px; clear: both; text-align: center; background: #4d4d4d url('/theme/images/bg-footer.png') repeat-x; font-size: 1.1em; color: #999; }
+#footer { margin-top: 150px; clear: both; text-align: center; background: #4d4d4d url('/theme/images/bg-footer.png') repeat-x; font-size: 1em; color: #999; }
         
         #footer #cont { margin: 0 auto; width: 960px; height: 500px; }
         
-        #footer #cont #top ul {
-                padding-top: 30px;
-        }
+        #footer #cont #top ul { padding-top: 30px; margin-bottom: 30px; }
         
-        #footer #cont #top ul li {
-                display: inline;
-        }
+        #footer #cont #top ul li { display: inline; }
         
         #footer #cont #top { float: left; width: 100%; }
         
