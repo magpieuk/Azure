@@ -1,6 +1,6 @@
 .testimonials {border-bottom:1px dashed #ddd; margin:20px 0;}
 
-.testimonial {border-top:1px dashed #ddd;}
+.testimonial {border-bottom:2px solid #eee;}
 cite {font-style:normal;}
 blockquote p {padding: 0 36px;}
 

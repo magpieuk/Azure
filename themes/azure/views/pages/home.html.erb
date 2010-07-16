@@ -19,18 +19,30 @@
 				<%= @page[:body] %>
 			</div>
 			
-			<div class="column floatLeft firstCol">
-				<img src="/theme/images/col1.jpg" alt="TODO" />
-                                <%= @page[:bottom_left] %>
-			</div>
-			
-			<div class="column floatLeft">
-				<img src="/theme/images/col2.jpg" alt="TODO" />
-                                <%= @page[:bottom_centre] %>
-			</div>
-			
-			<div class="column floatLeft">
-				<img src="/theme/images/col3.jpg" alt="TODO" />
-                                <%= @page[:bottom_right] %>
-			</div>
+      <div class="column floatLeft">
+        <div class="col1">
+          <div class="colBottom">
+            <p>Why choose us</p>
+          </div>
+        </div>
+        <%= @page[:bottom_left] %>
+      </div> 
+                                
+      <div class="column floatLeft">
+        <div class="col2">
+          <div class="colBottom">
+            <p>Our Vision</p>
+          </div>
+        </div>
+        <%= @page[:bottom_center] %>   
+      </div> 
+                                
+      <div class="column floatLeft"> 
+        <div class="col3">
+          <div class="colBottom">
+            <p>Our Vision</p>
+          </div>
+        </div>
+        <%= @page[:bottom_right] %>  
+      </div> 
 		</div> <!-- end contentWrapper -->
