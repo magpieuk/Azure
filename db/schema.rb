@@ -54,10 +54,13 @@ ActiveRecord::Schema.define(:version => 20100715233237) do
     t.string   "phone"
     t.text     "message"
     t.integer  "position"
-    t.boolean  "open",       :default => true
+    t.boolean  "open",        :default => true
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.boolean  "spam",       :default => false
+    t.boolean  "spam",        :default => false
+    t.integer  "category_id"
+    t.integer  "location_id"
+    t.text     "address"
   end
 
   create_table "inquiry_settings", :force => true do |t|
