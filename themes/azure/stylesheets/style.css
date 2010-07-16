@@ -55,15 +55,11 @@ h1
 h2
 { color: #333; font-size: 1.8em; line-height:1em; padding-bottom: 7px; margin: 10px 0; }
 h3
-{ color: #333; font-size: 1.3em;  }
+{ color: #333; font-size: 1.3em; line-height:1em; padding-bottom: 5px; margin: 7px 0; }
 h4
 { color: #333; font-size: 1.2em; }
 
-        body{
-                line-height:1.1em;
-                background: url('/theme/images/bg.jpg');
-                font-size:1em;
-        }
+        body{  line-height:1.1em; background: url('/theme/images/bg.jpg'); font-size:1em; }
 
 /* END OF RESET CSS */
 
@@ -75,11 +71,7 @@ clearfix:after
 .clearfix {display: block;}
 
 
-body {  
-    font-family:arial;    
-    font-size:12px; 
-	
-}  
+body {   font-family:arial; font-size:12px; }  
   
   
 .hide {
@@ -293,7 +285,7 @@ a:link {
         
         #footer #cont { margin: 0 auto; width: 960px; height: 500px; }
         
-        #footer #cont #top ul { padding-top: 30px; }
+        #footer #cont #top ul { padding-top: 30px; margin-bottom: 30px; }
         
         #footer #cont #top ul li { display: inline; }
         
