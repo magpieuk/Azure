@@ -7,7 +7,7 @@
   <%= @service.content %>
   <h2><%= @service.staff.summary rescue "No Staff Member Assigned"%> </h2>
   <%= image_fu @service.staff.photo rescue nil%>
-  <%= @service.staff.description %>
+  <%= @service.staff.description rescue nil%>
 <% end %>
 
 <% content_for :sidebar do %>
