@@ -311,42 +311,41 @@ a:link {
 #footer {
                 margin-top: 150px;
                 clear: both;
-                width: 100%;
                 text-align: center;
-                background: url('/theme/images/bg-footer.png') repeat-x;
-                background-color: #4d4d4d;
-                height: 1000px;
+                background: #4d4d4d url('/theme/images/bg-footer.png') repeat-x;
         }
         
-        #footer #top ul {
+        #footer #cont { margin: 0 auto; width: 960px; height: 500px; }
+        
+        #footer #cont #top ul {
                 padding-top: 30px;
         }
         
-        #footer #top ul li {
+        #footer #cont #top ul li {
                 display: inline;
         }
         
-        #footer #top { float: left; width: 100%; }
-        #footer #btm { float: left; width: 100%; }
+        #footer #cont #top { float: left; width: 100%; }
         
-        #footer #btm .img1 { float: left; width: 384px; height: 136px; background: url(/theme/images/bg-footer-1.png) no-repeat top left; -webkit-transition-duration: 0.3s; -o-transition-duration: 0.3s; }
-        #footer #btm .img1:hover { float: left; width: 384px; height: 136px; background: url(/theme/images/bg-footer-1-hi.png) no-repeat top left; -webkit-transition-duration: 0.3s; -o-transition-duration: 0.3s; }
+        #footer #cont #btm { float: left; width: 100%; }
         
-        #footer #btm .img2 { float: left; width: 384px; height: 112px; background: url(/theme/images/bg-footer-2.png) no-repeat top left; -webkit-transition-duration: 0.3s; -o-transition-duration: 0.3s; }
-        #footer #btm .img2:hover { float: left; width: 384px; height: 112px; background: url(/theme/images/bg-footer-2-hi.png) no-repeat top left; -webkit-transition-duration: 0.3s; -o-transition-duration: 0.3s; }
+        #footer #cont #btm .img1 { float: left; width: 136px; height: 90px; background: url(/theme/images/bg-footer-1.png) no-repeat top left; }
+        #footer #cont #btm .img1:hover { float: left; width: 136px; height: 90px; background: url(/theme/images/bg-footer-1-hi.png) no-repeat top left; }
         
-        #footer #btm .img3 { float: left; width: 384px; height: 121px; background: url(/theme/images/bg-footer-3.png) no-repeat top left; -webkit-transition-duration: 0.3s; -o-transition-duration: 0.3s; }
-        #footer #btm .img3:hover { float: left; width: 384px; height: 121px; background: url(/theme/images/bg-footer-3-hi.png) no-repeat top left; -webkit-transition-duration: 0.3s; -o-transition-duration: 0.3s; }
+        #footer #cont #btm .img2 { float: left; width: 112px; height: 90px; background: url(/theme/images/bg-footer-2.png) no-repeat top left; }
+        #footer #cont #btm .img2:hover { float: left; width: 112px; height: 90px; background: url(/theme/images/bg-footer-2-hi.png) no-repeat top left; }
         
-        #footer #btm .img4 { float: left; width: 384px; height: 155px; background: url(/theme/images/bg-footer-4.png) no-repeat top left; -webkit-transition-duration: 0.3s; -o-transition-duration: 0.3s; }
-        #footer #btm .img4:hover { float: left; width: 384px; height: 155px; background: url(/theme/images/bg-footer-4-hi.png) no-repeat top left; -webkit-transition-duration: 0.3s; -o-transition-duration: 0.3s; }
+        #footer #cont #btm .img3 { float: left; width: 121px; height: 90px; background: url(/theme/images/bg-footer-3.png) no-repeat top left; }
+        #footer #cont #btm .img3:hover { float: left; width: 121px; height: 90px; background: url(/theme/images/bg-footer-3-hi.png) no-repeat top left; }
         
-        #footer #btm .img5 { float: left; width: 384px; height: 200px; background: url(/theme/images/bg-footer-5.png) no-repeat top left; -webkit-transition-duration: 0.3s; -o-transition-duration: 0.3s; }
-        #footer #btm .img5:hover { float: left; width: 384px; height: 200px; background: url(/theme/images/bg-footer-5-hi.png) no-repeat top left; -webkit-transition-duration: 0.3s; -o-transition-duration: 0.3s; }
+        #footer #cont #btm .img4 { float: left; width: 155px; height: 90px; background: url(/theme/images/bg-footer-4.png) no-repeat top left; }
+        #footer #cont #btm .img4:hover { float: left; width: 155px; height: 90px; background: url(/theme/images/bg-footer-4-hi.png) no-repeat top left; }
         
-        #footer #btm .img6 { float: left; width: 384px; height: 214px; background: url(/theme/images/bg-footer-6.png) no-repeat top left; -webkit-transition-duration: 0.3s; -o-transition-duration: 0.3s; }
-        #footer #btm .img6:hover { float: left; width: 384px; height: 214px; background: url(/theme/images/bg-footer-6-hi.png) no-repeat top left; -webkit-transition-duration: 0.3s; -o-transition-duration: 0.3s; }
-
+        #footer #cont #btm .img5 { float: left; width: 200px; height: 90px; background: url(/theme/images/bg-footer-5.png) no-repeat top left; }
+        #footer #cont #btm .img5:hover { float: left; width: 200px; height: 90px; background: url(/theme/images/bg-footer-5-hi.png) no-repeat top left; }
+        
+        #footer #cont #btm .img6 { float: left; width: 214px; height: 90px; background: url(/theme/images/bg-footer-6.png) no-repeat top left; }
+        #footer #cont #btm .img6:hover { float: left; width: 214px; height: 90px; background: url(/theme/images/bg-footer-6-hi.png) no-repeat top left; }
         #img-statement {
                 padding: 15px 0 10px 0;
         }
