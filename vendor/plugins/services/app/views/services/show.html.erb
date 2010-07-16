@@ -20,9 +20,14 @@
 
   <%= @service.content %>
   <% if @service.staff.present?  %>
-    <h2><%= @service.staff.summary rescue "No Staff Member Assigned"%> </h2>
+    <h2>Service Contact</h2>
+    <h3><%= @service.staff.summary rescue "No Staff Member Assigned"%> </h3>
     <%= image_fu @service.staff.photo rescue nil%>
     <%= @service.staff.description rescue nil%>
+    <p>
+      email: <%= mail_to @service.staff.email unless @service.staff.email.blank? %><br/>
+      telephone: <%= @service.staff.telephone unless @service.staff.telephone.blank? %>
+    </p>
   <% end  %>
 <% end %>
 
