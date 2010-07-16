@@ -303,10 +303,13 @@ a:link {
 { background: url(/theme/images/bg-sidebar-hover.png) no-repeat top right; padding: 7px; margin: 0 5px; color: #fff; -webkit-transition-duration: 0.3s; -o-transition-duration: 0.3s; height: 45px; }
 #sidebar #container ul li.selected a
 { background: url(/theme/images/bg-sidebar-hi.png) no-repeat top right; padding: 7px; margin: 0 5px; color: #fff; -webkit-transition-duration: 0.3s; -o-transition-duration: 0.3s; height: 45px; }
-#maincolumn { padding: 0 10px 10px 40px; float: left; margin-top: 10px; margin-bottom: 10px; min-width: 610px; }
+#maincolumn { padding: 0 10px 10px 40px; float: left; margin-top: 10px; margin-bottom: 10px; width: 610px; }
+#maincolumn-full { padding: 0 10px 10px 40px; float: left; margin-top: 10px; margin-bottom: 10px; width: 100%; }
+
 #maincolumn .box-1 { float: left; width: 100%; margin-bottom: 20px; }
 #maincolumn .box-2 { background: #e6e6e6; padding: 7px; float: left; width: 100%; margin-bottom: 20px; }
 #maincolumn #servicesimg { background-image: url('/theme/images/600wide2.jpg'); width: 600px; height: 300px; }
+#maincolumn #servicesimg { background-image: url('/theme/images/600wide2.jpg'); width: 600px; height: 300px; margin:0 auto;}
 
 /* -- Global Styles --*/
 

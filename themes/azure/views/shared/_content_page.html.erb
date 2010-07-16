@@ -1,18 +1,25 @@
 <% body_content = @page[:body] if (body_content = yield :body_content_left).blank? %>
 
-<%= render :partial => "/shared/sidebar" if sidebar_required? %>
+<% if (sidebar = yield :sidebar).present? %>
+  <%= sidebar %>
+  <div id="maincolumn" class="clearfix">
+<% elsif sidebar_required? %>
+  <%= render :partial => "/shared/sidebar" %>
+  <div id="maincolumn" class="clearfix"> 
+<% else %>
+  <div id="maincolumn-full" class="clearfix"> 
+<% end %>
 
-<div id="maincolumn" class="clearfix"> 
-  <div class="box-1">
-    <%= body_content %>
-  </div>
-  <% unless @page[:grey_box].blank? %>
-  <div class="box-2">
-    <%= @page[:grey_box] %>
-  </div>
-  <% end  %>
-</div> 
+    <div class="box-1">
+      <%= body_content %>
+    </div>
+    
+    <% unless @page[:grey_box].blank? %>
+    <div class="box-2">
+        <%= @page[:grey_box] %>
+      </div>
+    <% end  %>
 
-
+  </div> 
 
 <%= render :partial => '/shared/draft_page_message' unless @page.nil? or @page.live? -%>
