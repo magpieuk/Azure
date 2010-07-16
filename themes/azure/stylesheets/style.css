@@ -44,7 +44,7 @@
 		border-spacing:0;
 	}
  
-p {line-height:1.5em; font-size:1.3em; margin:10px 0;}
+p {line-height:1.5em; font-size:1em; margin:10px 0;}
 
 a
 { color: #9b0580; text-decoration: none; font-weight: bold; }
@@ -201,7 +201,6 @@ a:link {
 		padding-top: 40px;
 		font-size: 1.2em;
 		text-align: center;
-		border 10px solid gold;
 	}
 	
 
@@ -284,13 +283,7 @@ a:link {
                 background: url('/theme/images/col3.jpg') no-repeat top center;
         }
         
-        .colBottom {
-                width: 242px;
-                margin: 0 auto;
-                background: url('/theme/images/bg-img-bottom.png') no-repeat bottom center;
-                padding: 142px 0 15px 0;
-                color: #fff;
-        }
+        .colBottom { width: 242px; margin: 0 auto; background: url('/theme/images/bg-img-bottom.png') no-repeat bottom center; padding: 137px 0 15px 10px; color: #fff; }
         
         .column p {
                 padding-top: 10px;
@@ -304,7 +297,7 @@ a:link {
 	}
 	
 	
-#footer { margin-top: 150px; clear: both; text-align: center; background: #4d4d4d url('/theme/images/bg-footer.png') repeat-x; font-size: 1.1em; }
+#footer { margin-top: 150px; clear: both; text-align: center; background: #4d4d4d url('/theme/images/bg-footer.png') repeat-x; font-size: 1.1em; color: #999; }
         
         #footer #cont { margin: 0 auto; width: 960px; height: 500px; }
         
