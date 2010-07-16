@@ -25,13 +25,12 @@
       </div>
     </div>
     <% end %>
-  </div>
-
   <ul class="filmstrip">
     <% @album.images.each do |img| %>
       <li><%= image_fu img, :preview %></li>
     <% end %>
   </ul>
+ </div>
 
 <% end %>
 
