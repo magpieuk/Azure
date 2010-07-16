@@ -15,22 +15,14 @@
 
 <% end %>
 <% content_for :body_content_left do %>
+<ul id="photos">
+    <li><span class="panel-overlay">This is an overlay</span><img src="http://appleton.me/wp-content/themes/appleton.me 1.6/images/01.jpg" /></li>
+    <li><span class="panel-overlay">This is another overlay</span><img src="http://appleton.me/wp-content/themes/appleton.me 1.6/images/02.jpg" /></li>
 
-  <div id="photos" class="galleryview">
-    <% @album.images.each do |img| %>
-    <div class="panel">
-      <%= image_fu img %>
-      <div class="panel-overlay">
-        <h2><%= img.caption %></h2>
-      </div>
-    </div>
-    <% end %>
-  <ul class="filmstrip">
-    <% @album.images.each do |img| %>
-      <li><%= image_fu img, :preview %></li>
-    <% end %>
-  </ul>
- </div>
+    <li><span class="panel-overlay">This is yet another overlay</span><img src="http://appleton.me/wp-content/themes/appleton.me 1.6/images/03.jpg" /></li>
+    <li><span class="panel-overlay">This is an overlay too</span><img src="http://appleton.me/wp-content/themes/appleton.me 1.6/images/04.jpg" /></li>
+</ul>
+
 
 <% end %>
 
