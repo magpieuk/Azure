@@ -1,7 +1,7 @@
 <% content_for :body_content_left do %>
   <ul id="albums">
     <% @albums.each do |album| %>
-      <li>
+    <li class="album">
         <% if album.cover_image.present? %>
           <%= image_fu album.cover_image, :medium %>
         <% else %>

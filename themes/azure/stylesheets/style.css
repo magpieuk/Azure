@@ -363,6 +363,9 @@ a:link {
 
 /* -- Global Styles --*/
 
+ul li.album {display:block;float:left; margin-right:10px;margin-top:10px;}
+
+ul li.album img {border:3px solid #808080;}
 
 ul#staff-list { list-style-type:none; }
 
