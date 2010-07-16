@@ -51,7 +51,7 @@ a
 a:hover
 { text-decoration: none; color: #9b0580; }
 h1
-{ color: #333; font-size: 4em; padding-bottom: 7px; text-shadow: 0 1px 0 #fff; }
+{ color: #333; font-size: 4em; padding-bottom: 7px; }
 h2
 { color: #333; font-size: 1.8em; line-height:1em; padding-bottom: 7px; margin: 10px 0; }
 h3
@@ -398,7 +398,7 @@ label { width: 4em; float: left; text-align: right; margin-right: 0.5em; display
 
 input { color: #781351; border: 1px solid #781351; margin-left: 50px; }
 
-textarea { background: #7ac4d4; border: 1px solid #781351; }
+textarea { background: url('/theme/images/wd-logo-small.png') no-repeat bottom right; border: 1px solid #781351; }
 
 .field { margin-top: 10px; }
 select { color: #781351; border: 1px solid #781351; }
