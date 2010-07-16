@@ -1,8 +1,13 @@
 <% content_for :body_content_left do %>
+  <%= @page[:body]%>
+  
   <ul id="staff-list">
     <% @vacancies.each do |vacancy| %>
       <li>
-        <%= link_to vacancy.job_title, vacancy_url(vacancy) %>
+        <h2><%= link_to vacancy.job_title, vacancy_url(vacancy) %></h2>
+        <%= truncate  vacancy.description, :length => 200,
+        :omission => " ... #{link_to 'Read more', vacancy_url(vacancy)}",
+        :preserve_html_tags => true %>
       </li>
     <% end %>
   </ul>
