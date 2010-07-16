@@ -29,6 +29,7 @@ class Admin::ImagesController < Admin::BaseController
   end
 
   def insert
+    @skip_album = true if params[:skip_album].present?
     self.new if @image.nil?
 
     @url_override = admin_images_url(:dialog => from_dialog?, :insert => true)
