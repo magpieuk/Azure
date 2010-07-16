@@ -1,3 +1,29 @@
+<%= content_for :head do %>
+
+<% end %>
+<% content_for :body_content_left do %>
+
+<div id="photos" class="galleryview">
+  <% @album.images.each do |img|    %>
+  <div class="panel">
+    <%= image_fu img %>
+    <div class="panel-overlay">
+      <h2><%= img.caption %></h2>
+    </div>
+  </div>
+  <% end %>
+</div>
+
+<ul class="filmstrip">
+  <% @album.images.each do |img|    %>
+    <li><%= image_fu img :preview %></li>
+  <% end %>
+</ul>
+
+<% end %>
+
+
+
 <% content_for :body_content_title do %>
   <%= @album.name %>
 <% end %>
