@@ -212,7 +212,7 @@ a:link {
 			padding-top: 14px;
 		}
 		
-		#primaryNav .selected {
+		#primaryNav li.selected a{
 			background-color: #9b0580;
 			border: 6px solid #9b0580;
 			border-right: 0;

@@ -1,0 +1,8 @@
+<%
+  css = (css = css_for_menu_branch(menu_branch, menu_branch_counter)).any? ? " class='#{css.join(' ')}'" : nil
+  dom_id = (menu_branch.parent_id.nil? and menu_branch.title.present?) ? " id='item_#{menu_branch_counter}'" : nil
+-%>
+
+<li<%= css -%><%= dom_id -%>>
+  <%= link_to menu_branch.title, menu_branch.url %>
+</li>
