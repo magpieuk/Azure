@@ -1,39 +1,17 @@
-<div id="sidebar"> 
-				<div id="container"> 
-					<ul class-"clearfix"> 
-						<li><a href="cramhouse.html">Cramlington Housing</a></li> 
-						<li><a href="newchouse.html">Newcastle Housing</a></li> 
-						<li><a href="tynehouse.html">Tynedale Housing</a></li> 
-						<li><a href="washhouse.html">Washington Housing</a></li> 
-						<li><a href="community.html">Community Access</a></li> 
-					</ul> 
-				</div> 
+
+<%= render :partial => "/shared/sidebar" if sidebar_required? %>
+
+<div id="maincolumn" class="clearfix"> 
+  <div class="box-1">
+    <%= @page[:body] %>
+  </div>
+  <% unless @page[:grey_box].blank? %>
+  <div class="box-2">
+    <%= @page[:grey_box] %>
+  </div>
+  <% end  %>
 </div> 
-        
-			<div id="maincolumn" class="clearfix"> 
-				<div class="box-1"> 
-					<h2>Welcome to the services page</h2> 
-					<p class="introParagraphsidebar"> 
-					lorem ipsum main column baby
-					</p> 
-					<h2>Welcome to the services page</h2> 
-					<p class="introParagraphsidebar"> 
-					lorem ipsum main column baby
-					</p> 
-				</div> 
-				<div class="box-2"> 
-					<h2>Welcome to the services page</h2> 
-					<p class="introParagraphsidebar"> 
-					lorem ipsum main column baby
-					</p> 
-					<p class="introParagraphsidebar"> 
-					lorem ipsum main column baby
-					</p> 
-				</div> 
-			</div> 
-		</div>
-		</div> <!-- end contentWrapper -->
-		
-		
+
+
 
 <%= render :partial => '/shared/draft_page_message' unless @page.nil? or @page.live? -%>

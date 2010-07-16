@@ -4,4 +4,14 @@
 module ApplicationHelper
   include Refinery::ApplicationHelper # leave this line in to include all of Refinery's core helper methods.
 
+  def sidebar_required?
+    @menu_elements = []
+    if @page.parent_id.present?
+      @menu_elements = @page.parent.children.reject{|c| !c.in_menu?}
+    end
+    unless @page.children.blank?
+     @menu_elements = @page.children.reject{|c| !c.in_menu?}
+    end
+    return !@menu_elements.empty?
+  end
 end

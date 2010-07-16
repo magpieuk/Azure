@@ -1,0 +1,9 @@
+<div id="sidebar">
+  <div id="container">
+    <ul class="clearfix">
+      <% @menu_elements.each do |page| %>
+      <li <%= 'class="selected"' if page==@page %><%= link_to page.title, page_path(page) %></li>
+      <% end %>
+    </ul>
+  </div>
+</div> 
