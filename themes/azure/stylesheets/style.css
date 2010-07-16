@@ -364,31 +364,15 @@ a:link {
 /* -- Global Styles --*/
 
 
-ul#staff-list {
-  list-style-type:none;
-}
+ul#staff-list { list-style-type:none; }
 
-ul#staff-list li{
-  padding:20px 0;
-  border-bottom:2px solid #eee;
-  float:left;
-}
+ul#staff-list li{ padding:20px 0; border-bottom:2px solid #eee; float:left; }
 
-.staff-photo {
-  float:left;
-  width: 150px;
-}
+.staff-photo { float:left; width: 150px; }
 
-.staff-details {
-  float:left;  
-  padding-left:30px;
-  width:430px;
-}
+.staff-details { float:left; padding-left:30px; width:430px; }
 
-.staff-photo img {
-	width: 133px;
-	height: 180px;
-}
+.staff-photo img { width: 133px; height: 180px; }
 
 /* --- Form Styles --- */
 
