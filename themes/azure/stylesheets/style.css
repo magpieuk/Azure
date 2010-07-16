@@ -302,7 +302,7 @@ a:link {
 	
 #footer { margin-top: 150px; clear: both; text-align: center; background: #4d4d4d url('/theme/images/bg-footer.png') repeat-x; font-size: 1.1em; color: #999; }
         
-        #footer #cont { margin: 0 auto; width: 960px; height: 500px; }
+        #footer #cont { margin: 0 auto; width: 960px; height: 400px; }
         
         #footer #cont #top ul {
                 padding-top: 30px;
@@ -392,51 +392,15 @@ ul#staff-list li{
 
 /* --- Form Styles --- */
 
-<style type="text/css">
+.inquiries { width: 700px; margin: 0 auto; }
 
-.inquiries {
-width: 700px;
-margin: 0 auto;
-}
+label { width: 4em; float: left; text-align: right; margin-right: 0.5em; display: block }
 
-label
-{
-width: 4em;
-float: left;
-text-align: right;
-margin-right: 0.5em;
-display: block
-}
+input { color: #781351; border: 1px solid #781351; margin-left: 50px; }
 
-input
-{
-color: #781351;
-background: #7ac4d4;
-border: 1px solid #781351
-margin-left: 50px;
-}
+textarea { background: #7ac4d4; border: 1px solid #781351; }
 
-textarea
-{
-color: #781351;
-background: #7ac4d4;
-border: 1px solid #781351;
-}
+.field { margin-top: 10px; }
+select { color: #781351; border: 1px solid #781351; }
 
-.field {
-margin-top: 10px;
-}
-select
-{
-color: #781351;
-background: #7ac4d4;
-border: 1px solid #781351
-}
-
-#inquiry_submit{
-margin: 0 auto;
-margin-top: 10px;
-padding: 10px;
-margin-left: 150px;
-}
-</style>
+#inquiry_submit { margin: 0 auto; margin-top: 10px; padding: 10px; margin-left: 150px; }
