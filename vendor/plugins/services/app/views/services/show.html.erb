@@ -1,27 +1,26 @@
 <%= render :partial => "/shared/slider_small" %>
 
-<% content_for :body_content_title do %>
-  <%= @service.title %>
-<% end %>
-
 <% content_for :body_content_left do %>
   <h2><%= h @service.title %></h2>
+  
   <% if @service.album.present? %>
-  <ul class="slideshow">
-    <% @service.album.images.each_with_index do |img, index|%>
-    <% if index == 0 %>
-      <li class="show"><a href="#"><%= image_fu img %></a></li>
-    <% else %>
-      <li><%= image_fu img %></li>
-    <% end  %>
+    <ul class="slideshow">
+      <% @service.album.images.each_with_index do |img, index|%>
+        <% if index == 0 %>
+          <li class="show"><a href="#"><%= image_fu img %></a></li>
+        <% else %>
+          <li><%= image_fu img %></li>
+        <% end  %>
   <% end %>
-  </ul>
+    </ul>
   <% end  %>
 
   <%= @service.content %>
+  
   <% if @service.staff.present?  %>
     <h2>Service Contact</h2>
     <h3><%= @service.staff.summary rescue "No Staff Member Assigned"%> </h3>
+    <br />
     <%= image_fu @service.staff.photo rescue nil%>
     <%= @service.staff.description rescue nil%>
     <p>
@@ -29,6 +28,7 @@
       telephone: <%= @service.staff.telephone unless @service.staff.telephone.blank? %>
     </p>
   <% end  %>
+  
 <% end %>
 
 <% content_for :sidebar do %>
@@ -45,16 +45,4 @@
   </div>
 <% end %>
 
-
-<% content_for :body_content_right do %>
-  <h2><%= t('.other') %></h2>
-  <ul id="services">
-    <% @services.each do |service| %>
-      <li>
-        <%= link_to service.title, service_url(service) %>
-      </li>
-    <% end %>
-  </ul>
-<% end %>
-
-<%= render :partial => "/shared/content_page" %>
+<%= render :partial => "/shared/content_page", :locals => {:hide_title => true} %>
