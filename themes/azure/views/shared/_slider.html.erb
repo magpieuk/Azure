@@ -3,7 +3,7 @@
 	$(document).ready(function() {
 
 	    //Execute the slideShow, set 3 seconds for each images
-	    slideShow(3000);
+	    slideShow(<%=  RefinerySetting.find_or_set(:slideshow_speed, 10) * 1000 %>);
 
 	});
 
